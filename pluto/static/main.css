@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/sans_rlar.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    font-style: italic;
+    src: url("/assets/sans_rlit.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/assets/sans_bold.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: italic;
+    src: url("/assets/sans_bdit.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/assets/mono_rlar.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    font-weight: 400;
+    font-style: italic;
+    src: url("/assets/mono_rlit.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/assets/mono_bold.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    font-weight: 700;
+    font-style: italic;
+    src: url("/assets/mono_bdit.ttf");
+}
+
+.logo {
+    filter: invert(73%) sepia(10%) saturate(5496%) hue-rotate(176deg) brightness(86%) contrast(99%);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700 !important;
+}
+
+a {
+    text-decoration: none;
+    color: #51a2da;
+}
+
+.side {
+    top: 60px;
+    overflow-y: auto;
+    max-height: calc(100vh - 50px);
+    scrollbar-width: none;
+}
+
+.navbar {
+    z-index: 10000;
+}
+
+.cont img{
+  max-width: 100%;
+  height: auto;
+}
+
+.cont > .row {
+  scroll-margin-top: 20px;
+}
+
+.theme-icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+#theme-icon-active {
+    width: 20px;
+    height: 20px;
+}
+
+[data-bs-theme="dark"] .theme-icon {
+    filter: invert(1);
+}
